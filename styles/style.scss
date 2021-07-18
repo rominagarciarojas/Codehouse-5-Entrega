@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  
+}
+
+  @import "variables";
+  @import "./scss/bootstrap";
+
+
+#ribbon{
+    background-color: rgb(245, 142, 142);
+    background-image: $cinta;
+}
+
+.nav-link:hover{
+    font-style: italic;
+    transform: scale(1.1);
+}
+
+footer{
+    background-color: $fondo-rosa;
+}
+
+button{
+    background-color: $fondo-gris;
+}
+
+
+h1, h2, h3, h4{
+    font-family: $title-fontfamily;
+}
+
+h1, h2{
+    color:$title-color;
+}
+
+h4, h5, h6{
+    font-family: $title-fontfamily;
+}
+
+h4{
+    font-style: bold;
+    margin:0;
+}
+
+.carousel__texto{
+    color: whitesmoke;
+    text-shadow: rgb(49, 48, 48) ;
+    margin: 2px;
+    z-index: 1;
+}
+
+.container-botonW{
+    background-color: #2e6329;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 10px;
+    right: 10px;
+    padding: 12px;
+    transition: ease 0.3s;
+    animation: 1.2s infinite;
+}
+
+.container-botonW:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.botonW{
+    width: 30px;
+    transition: ease 1s;
+}
+
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria__tituloPrincipal{
+    width: 100vw;
+    height: 100px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.galeria__fotos{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.galeria__titulo{
+    margin:auto;
+    padding: 10px 0;
+    font-style: bold;
+    font-size:x-large;
+    font-variant: small-caps;
+}
+
+.galeria__contenedorFotos{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-left: 95px;
+    margin-right: 110px;
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 30px;
+}
+
+.galeria__foto{
+    width: 352px;
+    border: 2px solid $marcoFotos;
+@if $marcoFotos == grey {
+    border:double grey;
+} @else {
+    border: 1px dotted;
+}
+}
+
+.galeria__foto:hover{
+    border-color: lightcoral;
+    transform: scale(1.1);
+}
+
+
+.redesSociales__boton{
+    color:rgb(161, 159, 159);
+    text-decoration-color: rgb(245, 142, 142);
+}
+
+.redesSociales__boton--nueva{
+     @extend .redesSociales__boton;
+    border: 2px dotted whitesmoke;
+ }
+
+.parrafoContacto{
+    font-size:large;
+}
+
+.paginaContacto{
+    height: auto;
+}
+.formularioContacto{
+    max-width: 100%;
+    max-height: auto;
+}
+.mapaContacto{
+    width: 100%;
+    height: auto;
+}
+
+.imagenContacto{
+    max-width: 100%; 
+    height: auto;
+}
+
+/*media queries*/
+
+@media (min-width: 1920px) {
+    .nav-link {
+        font-size: x-large;
+      }
+    iframe {
+      height: 635px;
+    }
+    .textoH1{
+        font-size: 60px;
+    }
+    .textoH2{
+        font-size: 40px;
+    }
+    .textoH3{
+        font-size: 40px;
+    }
+    .textoH5{
+        font-size: 35px;
+    }
+    .textoP{
+        font-size: 30px;
+    }
+    .textoPC{
+        font-size: 20px;
+    }
+ }
