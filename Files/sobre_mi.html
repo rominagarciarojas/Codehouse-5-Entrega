@@ -8,6 +8,7 @@
     <meta name="keywords"  content="yoga, mindfulness, meditación, bienestar, ashtanga, bikram, kundalini">
     <meta name="robots" content="index, follow">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
     <title>GABY PALAU - Encontra tu bienestar </title>
@@ -21,7 +22,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="navbar__contenedorItem collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="../index.html">Home</a>
               </li>
@@ -60,11 +61,15 @@
           <br>
             <h3 class="textoH3 featurette-heading vertical-align:inherit">Técnicas de meditación</h3>
             <p class="textoP lead vertical-align: inherit pt-2"><strong>Técnica del espejo</strong> : Siéntate con la espalda erguida. Coloca tus manos sobre tus rodillas, cierra los ojos e imagínate sentado frente a ti, como frente a un espejo. Reproduce con tu mente cada detalle de tu aspecto físico: tu cabello, tus facciones, tu expresión, la forma en que estás sentado. Ahora, visualízate desde todas las perspectivas: arriba, abajo, izquierda, derecha, y, al final, desde una perspectiva que englobe todas las demás. </p>
-            <p class="textoP lead vertical-align: inherit pt-2"><strong>Vela parpadeante</strong>: Cierra los ojos y respira de manera lenta y fluida. Imagina todo en oscuridad, y frente a ti, una vela. Visualiza cómo la llama parpadea, siendo a veces más tenue y a veces, más intensa. Concentra toda tu atención en su luz y deja que te transmita su serenidad. ¡Te sentirás mucho más tranquilo al terminar! </p>
+            <p class="textoP lead vertical-align: inherit pt-2"><strong>Vela parpadeante</strong>: Cierra los ojos y respira de manera lenta y fluida. Imagina todo en oscuridad, y frente a ti, una vela. Visualiza cómo la llama parpadea, siendo a veces más tenue y a veces, más intensa. Concentra toda tu atención en su luz y deja que te transmita su serenidad. </p>
           <br>
             <h3 class="textoH3 featurette-heading vertical-align:inherit">Música para meditar</h3>
-            <audio class="pt-2 m-1" src="../Audios/musica_para_meditar1.mp3" preload="auto" controls></audio>
-            <audio class="pt-2 m-1" src="../Audios/musica_para_meditar3.mp3" preload="auto" controls></audio>
+            <audio class='js-player' controls>
+              <source src="../Audios/musica_para_meditar1.mp3" type="audio/mp3">
+            </audio>
+            <audio class='js-player' controls>
+              <source src="../Audios/musica_para_meditar3.mp3" type="audio/mp3">
+            </audio>
         </div>
           <div class="col-md-6 text-center">
             <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3 border border-secondary" src="../Imagenes/fotogaby.jpg" alt="manos_arriba">
@@ -100,6 +105,10 @@
             <img class="botonW" src="../Imagenes/icono.png" alt="iconoWhatsapp">
         </a>
       </div>
+<script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
+<script>//<![CDATA[
+  const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));
+  //]]></script>
 <script src="../js/bootstrap.bundle.js"></script>
 </body>
 </html> 
