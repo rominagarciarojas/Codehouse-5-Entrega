@@ -165,7 +165,11 @@ h4{
     max-width: 100%; 
     height: auto;
 }
-
+.fondo{
+    background-image: url(/Imagenes/wave.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
 /*media queries*/
 
 @media (min-width: 1920px) {
