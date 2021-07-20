@@ -10904,7 +10904,7 @@ h4, .h4 {
 }
 
 .fondo {
-  background-image: url(/Imagenes/wave.svg);
+  background-image: url(Imagenes/wave.svg);
   background-repeat: no-repeat;
   background-position: bottom;
 }
